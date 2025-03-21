@@ -1,4 +1,8 @@
-- name: Frontend playbook
-  hosts: all
-  roles:
-    - frontend
+all:
+  hosts:
+    server1:
+      ansible_host: 18.232.148.70  # Replace with the private IP of your EC2 instance
+    server2:
+      ansible_host: 18.232.148.70
+    roles:
+      - frontend
